@@ -18,6 +18,6 @@ jobs:
           python-version: '3.11'
 
       - name: Run Script
-        run: python detection-tester.py
+        run: python scripts/detection-tester.py
 
         
