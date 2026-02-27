@@ -2,7 +2,7 @@ name: Python Test
 on: 
   push:
     branches:
-      - main.yml
+      - main
 
 jobs:
   run-python:
