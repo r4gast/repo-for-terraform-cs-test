@@ -1,0 +1,9 @@
+id: DET-008
+name: Kaan Test
+severity: Medium
+owner: Kaan
+
+rule:
+  query: |
+    #event_simpleName=ProcessRollUp2
+    | limit 10
