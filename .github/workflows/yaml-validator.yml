@@ -4,9 +4,6 @@ on:
   push:
     paths:
       - 'detections/*.yaml'
-  pull_request:
-    paths:
-      - 'detections/*.yaml'
 
 jobs:
   validate:
