@@ -1,1 +1,51 @@
+# ==================
+# Detection template
+# ==================
 
+
+
+id: SDE-1
+name: Suspicious Person Detection
+description: Cok fena adam yakalar
+source: AWS_detection_report.xyx
+lifecycle:
+  status: pre-prod                      
+  enabled: true
+  review_cycle_days: 90
+
+severity: medium
+confidence: medium
+
+owner: sde
+created: X/Y/26
+last update: XYZ
+
+mitre:
+  tactic: execution
+  techniques: 
+    - T1059.001
+
+log_source:
+  product: crowdstrike
+  dataset: ProcessRollUp2
+
+schedule:
+  interval: 5m
+  lookback: 10m
+
+throttle:
+  enabled: true
+  period: 1h
+
+tags:
+  - windows
+  - powershell
+  - execution
+
+#================================
+#Detection Logic
+#================================
+
+rule:
+  type: scheduled_search
+  query: queryyyy
