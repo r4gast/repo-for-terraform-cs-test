@@ -1,0 +1,29 @@
+name: Validate Detection File / Yaml
+
+on:
+  push:
+    paths:
+      - 'detections/*.yaml'
+  pull_request:
+    paths:
+      - 'detections/*.yaml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FalconPy
+        run: 
+          pip3 install pyyaml
+
+      - name: Run Validator
+        run: python scripts/yaml-validator.py
