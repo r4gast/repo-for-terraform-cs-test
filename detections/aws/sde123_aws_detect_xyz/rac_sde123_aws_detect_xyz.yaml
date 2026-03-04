@@ -1,1 +1,25 @@
+Detection ID:
+Detection Name: sde123_aws_detect_xyz
+Rac ID: 1
+Rac Creator: Kaan KAYA
+Rac Tag: #Known IP
+Rac Description: Rac created to exclude known network team IP addresses.
+Rac Request Ticket: ASANA Link
+Rac Requester: Asasa Jakata
+Rac Requester Team: SOC-EU
+Rac Application Date: 11/4/2026
+Rac Requested Time: 45 Days
+Rac Expiration Date: 11/5/2026
+Rac Enabled: True
 
+Rac SDE Commend:
+  12/12/2026: Detection rule creates too many False Positives.
+  12/01/2027: Detection rule will be retired in 20Days
+
+
+Rac Query: |
+  adasad1221asa
+  asdkadsad
+  aksdajldjad
+  a121asdaşşdalsd
+  asdasasdaş
