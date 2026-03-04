@@ -1,1 +1,65 @@
+id: SDE-1
+name: Suspicious Person Detection
+description: This rule catches hackers.
+source: AWS_detection_report.com/reporttounderstand_attack, Report2.docx, etc.
 
+lifecycle:
+  status: pre-prod                      
+  enabled: true
+  review_cycle_days: 90
+
+severity: medium
+confidence: medium
+
+owner: sde
+created: X/Y/26
+last update date: XYZ
+
+mitre:
+  tactic: execution
+  techniques: 
+    - T1059.001
+  procedures:
+    - T1231231231
+    - T21412132123
+
+log_source:
+  product: aws
+  dataset: aws-parser-xyz
+
+schedule:
+  interval: 5m
+  lookback: 10m
+
+throttle:
+  enabled: true
+  period: 1h
+
+tags:
+  - windows
+  - powershell
+  - execution
+
+#================================
+#Detection Logic
+#================================
+
+rule:
+  type: scheduled_search
+  query: queryyyy
+
+
+#================================
+#Risk Acceptance Definitions
+#================================
+
+enabled_rac_count: 2
+
+active_rac_list:
+  - rac_sde123_assume_role_catch.yaml
+  - rac_sde5123_assume_role_catch.yaml
+
+disabled_rac_list:
+  - rac_sde4123_assume_role_catch.yaml
+
+  
