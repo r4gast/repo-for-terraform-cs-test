@@ -5,9 +5,9 @@ import glob
 REQUIRED_FIELDS = [
   "id",
   "name",
+  "description",
   "severity",
-  "owner",
-  "rule" ]
+  "owner" ]
 
 def validate_file(file_path):
   print(f"Validating {file_path}...")
@@ -21,7 +21,7 @@ def validate_file(file_path):
       sys.exit(1)
 
   for field in REQUIRED_FIELDS:
-    print(field)
+    print(data[field])
     if field not in data:
       print(f"Missing required field '{field} in {field_path}")
       sys.exit(1)

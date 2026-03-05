@@ -1,0 +1,55 @@
+# ==================
+# Detection template
+# ==================
+
+
+
+id: "SDE-444"
+name: "Suspicious powershell Detection"
+description: "This detection rule catches suspicious powershell iex usage."
+source: "dfirreport123.com"
+
+lifecycle:
+  status: pre-prod                      
+  enabled: false
+  review_cycle_days: 90 #default value
+
+severity: medium
+confidence: medium
+
+owner: "SDE"
+created: "10/03/2026"
+last update: "12/04/2026"
+
+mitre:
+  tactic: execution
+  techniques: 
+    - T1059.001
+
+log_source:
+  product: windows
+  dataset: Process
+
+schedule:
+  interval: 5m
+  lookback: 10m
+
+throttle:
+  enabled: true
+  period: 1h
+
+tags:
+  - windows
+  - powershell
+  - execution
+
+
+#================================
+#Detection Logic
+#================================
+
+rule:
+  type: scheduled_search
+  query: "query to catch detections"
+
+
