@@ -4,7 +4,7 @@
 
 
 
-id: "SDE-444"
+id: "SDE-4445"
 name: "Suspicious powershell Detection"
 description: "This detection rule catches suspicious powershell iex usage."
 source: "dfirreport123.com"
