@@ -21,7 +21,7 @@ def validate_file(file_path):
       sys.exit(1)
 
   for field in REQUIRED_FIELDS:
-    print(data[field])
+    print(["mitre"]["tactic"])
     if field not in data:
       print(f"Missing required field '{field} in {field_path}")
       sys.exit(1)
