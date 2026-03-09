@@ -2,7 +2,7 @@
 # Detection template
 # ==================
 
-id: SDE-4244225
+id: SDE-99999999
 name: Suspicious powershell Detection
 description: This detection rule catches suspicious powershell iex usage.
 source: dfirreport123.com
